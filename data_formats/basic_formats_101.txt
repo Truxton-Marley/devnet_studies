@@ -1,0 +1,67 @@
+XML, JSON, YAML
+
+XML:
+    Elements -> everything between and including an opening and closing tag
+    Attributes
+    Self-Closing Tag
+    &apos;   <---'
+    &quot;   <---"
+    DOM - Document Object Model -> just think of HTML :)
+    Used by Netconf
+
+    Prolog:
+
+        <?xml version="1.0" encoding="UTF-8"?>
+    
+    The Rest:
+
+        <Mainbody itsAnAttribute="True">
+            <Stuff>MyStuff</Stuff>
+            <ICloseMyself Name="kitty"/>
+        </Mainbody>
+
+JSON:
+    You know this from JS! Easy Peasy :)
+    Double quotes required for keys
+    strings, booleans ( true | false <--LOWERCASE), ints (not in quotes), objects and arrays good for values
+    import json
+        json.loads()
+        json.load()
+
+YAML:
+    Designed to be human legible
+    White space matters!
+    Key-value pairs (scaler values for values)
+    Collections start with: -
+    Starts with: ---
+    Ends with: ...
+    # for comments
+    strings with or without quotes; quotes needed for escape characters
+    booleans (titlecase, uppercase, lowercase exceptable)
+
+
+###   YAML EXAMPLE   ###
+
+---
+Cats:
+-   Name: "Mr Pinecone"
+    Nickname: Szyska
+    Age: 7.5
+    Teeth: 29
+    Problems: Diabetes
+-   Name: Leos
+    Nickname: Bunny
+    Age: 2.4
+    Teeth: 24
+    Problems: Bullet in back near spine
+-   Name: Mosey
+    Nickname: ""
+    Age: 8
+    Teeth: 30
+    Problems: Autoimmune disease after tick bite
+-   Name: Cutty
+    Nickname: Bones
+    Age: 8
+    Teeth: 30
+    Problems: Asshole cat, but funny
+...
