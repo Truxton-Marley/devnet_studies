@@ -1,3 +1,6 @@
+# YAGNI
+# KISS
+# DRY
 #Hello World, input, help:
 print("Dzien Dobry!")
 
@@ -120,9 +123,47 @@ backwards_list = my_list[::-1]
 
 
 
+#########################################################################
+########################   DICTS IN PYTHON   ############################
+#########################################################################
+
+# keys can be any immutable type (all items in tuple must be immutable too)
+# values can be any type
+
+#Some of the basic rules in Python are that:
+
+#1) Uppercase letters come earlier than lowercase letters. This means that A < Z < a < z.
+
+#2) Numbers come earlier than letters. This means that 0 < 9 < A < a.
+
+#3) Space characters come before all printable characters.
+
+my_dict = {"name":"Timmy"}
+
+student = {"name": "Truxton", "topic": "python", "level": "basic"}
+
+my_dict.keys()
+my_dict.values()
+
+sorted(my_dict.keys())
+
+for k, v in student.items():
+    print(k)
+    print(student[k])
+    print(v)
+
+def print_kitty(**kwargs):
+    for k, v in kwargs.items():
+        print(f'{k}: {v}')
 
 
+#########################################################################
+##########################   DUNDER MAIN   ##############################
+#########################################################################
 
+if __name__ == "__main__":
+    #do something
+    pass
 
 
 
