@@ -1,0 +1,7 @@
+This date and time related code is from a tutorial on https://teamtreehouse.com/ by Kenneth Love.
+It has minor changes. This is not my creation, but just me studying the tutorial!!!
+Thanks to Treehouse and Kenneth Love and Treehouse for the course and notes!
+
+Any mistakes are my own.
+
+Below will be notes from the course.
