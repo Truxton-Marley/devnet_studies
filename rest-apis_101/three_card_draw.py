@@ -14,8 +14,8 @@ response = requests.request("GET", url, headers=headers, data = payload)
 
 ###Build on top by grabbing the deck_id and creating:
 deck = response.json()
-#deck_id = deck['deck_id']
-print(deck_id)
+deck_id = deck['deck_id']
+#print(deck_id)
 
 url = "https://deckofcardsapi.com/api/deck/" + deck_id + "/draw/?count=3"
 
